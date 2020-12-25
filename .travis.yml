@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+    - "10"
+
+cache:
+  directories:
+    - "node_modules"
+install:
+    - npm install
+script:
+    - npm run build
+cache:
+    directories:
+        - "node_modules"
+notifications:
+    email: false
+deploy:
+    provider: pages
+    skip-cleanup: true
+    local_dir: public
+    github-token: $GITHUB_TOKEN
+    repo: thinkwave/thinkwave.github.io
+    keep-history: true
+    target-branch: main
+    on:
+        branch: main
