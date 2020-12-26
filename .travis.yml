@@ -8,12 +8,12 @@ cache:
 install:
     - npm install
 script:
+    - echo "Skipping tests"
     - npm run build
-cache:
-    directories:
-        - "node_modules"
+
 notifications:
-    email: false
+    email: thinkwave@gmail.com
+
 deploy:
     provider: pages
     skip-cleanup: true
