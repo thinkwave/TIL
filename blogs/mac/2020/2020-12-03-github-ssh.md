@@ -3,7 +3,7 @@ layout: post
 title:  "Github에 SSH 키 생성 후 등록"
 date:   2020-12-03 12:36:12 +0900
 categories: Mac
-tags: [github ssh]
+tags: [github, ssh]
 ---
 
 SSH 키를 생성 후 github에 등록 하는 방법을 설명 합니다.
