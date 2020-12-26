@@ -2,7 +2,7 @@
 layout: post
 title:  "Github에 SSH 키 생성 후 등록"
 date:   2020-12-03 12:36:12 +0900
-categories: etc
+categories: Mac
 tags: [github ssh]
 ---
 

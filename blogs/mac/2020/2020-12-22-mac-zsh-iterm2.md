@@ -2,7 +2,7 @@
 layout: post
 title:  "MAC에 zsh 설치하기"
 date:   2020-12-22 12:36:12 +0900
-categories: mac
+categories: Mac
 tags: [zsh, mac, iterm2]
 ---
 

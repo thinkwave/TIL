@@ -2,9 +2,10 @@
 layout: post
 title:  "MAC에 Jekyll로 블로그 만들기(테마 적용)"
 date:   2020-12-23 23:06:44 +0900
-categories: mac
+categories: Others
 tags: [jekyll, mac]
 ---
+
 
 [Jekyll Theme](http://jekyllthemes.org/)에서 원하는 테마를 다운로드 받자.
 

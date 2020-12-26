@@ -2,7 +2,8 @@
 layout: post
 title:  "MAC에 Jekyll로 블로그 만들기(설치)"
 date:   2020-12-23 23:06:44 +0900
-categories: mac
+categories: Others
+tags: [jekyll, mac]
 ---
 
 github과 jekyll을 이용하여 간단히 블로그를 만들어 보자.
