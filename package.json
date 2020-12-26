@@ -1,7 +1,7 @@
 {
   "name": "thinkwave",
   "version": "1.0.0",
-  "author": "reco_luan",
+  "author": "thinkwave",
   "scripts": {
     "dev": "vuepress dev .",
     "build": "vuepress build ."
