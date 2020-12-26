@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MAC에 Jekyll로 블로그 만들기(설치)"
+title:  "MAC에 Jekyll로 블로그 만들기(설치)-travis"
 date:   2020-12-23 23:06:44 +0900
 categories: mac
 ---
