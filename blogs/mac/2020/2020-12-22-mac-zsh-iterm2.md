@@ -75,6 +75,45 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
+> 재설정이 필요하면 `p10k configure`를 입력한다.
+
+### Visual Studio Code 에서 폰트가 깨지면 `MesloLGS NF` 폰트를 설치 한다.
+
+#### 아래 처름 다이아몬드가 깨짐.
+```
+    This is Powerlevel10k configuration wizard. It will ask you a few questions and
+                                 configure your prompt.
+
+                    Does this look like a diamond (rotated square)?
+                      reference: https://graphemica.com/%E2%97%86
+
+                                     --->    <---
+
+(y)  Yes.
+(n)  No.
+(q)  Quit and do nothing.
+
+Choice [ynq]: 
+```
+
+#### 설치
+
+[powerlevel10k에서 font 설치 참고](https://github.com/romkatv/powerlevel10k/#meslo-nerd-font-patched-for-powerlevel10k) 하여 폰트 다운로드하고 사용하는 터미널에 맞게 설정 하면 됩니다.
+
+* 폰트 다운로드
+  - MesloLGS NF Regular.ttf
+  - MesloLGS NF Bold.ttf
+  - MesloLGS NF Italic.ttf
+  - MesloLGS NF Bold Italic.ttf
+
+> 다운로드 받은 폰트를 더블 클릭하여 '서체설치' 버튼을 클릭한다.
+
+* Visual Studio Code: Open Code → Preferences → Settings, enter terminal.integrated.fontFamily in the search box and set the value to MesloLGS NF
+
+
+
+
+
 
 ## 참고
 [본격 macOS에 개발 환경 구축하기](https://subicura.com/2017/11/22/mac-os-development-environment-setup.html)

@@ -1,6 +1,7 @@
 {
   "name": "thinkwave",
   "version": "1.0.0",
+  "license": "MIT",
   "author": "thinkwave",
   "scripts": {
     "dev": "vuepress dev .",

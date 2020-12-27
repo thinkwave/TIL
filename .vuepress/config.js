@@ -31,16 +31,6 @@ module.exports = {
         "link": "/timeline/",
         "icon": "reco-date"
       },
-      // {
-      //   "text": "Docs",
-      //   "icon": "reco-message",
-      //   "items": [
-      //     {
-      //       "text": "vuepress-reco",
-      //       "link": "/docs/theme-reco/"
-      //     }
-      //   ]
-      // },
       {
         "text": "Contact",
         "icon": "reco-message",
@@ -53,14 +43,6 @@ module.exports = {
         ]
       }
     ],
-    "sidebar": {
-      "/docs/theme-reco/": [
-        "",
-        "theme",
-        "plugin",
-        "api"
-      ]
-    },
     "type": "blog",
     "blogConfig": {
       "category": {
@@ -75,6 +57,8 @@ module.exports = {
     "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
+    "subSidebar": "auto",
+    "sidebarDepth": 4,
     "lastUpdated": "Last Updated",
     "author": "thinkwave",
     "authorAvatar": "/avatar.png",
