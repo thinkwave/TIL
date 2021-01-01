@@ -170,8 +170,11 @@ final weatherStateProvider = Provider<WeatherState>((ref) {
 ## 참고
 
 [Riverpod [1] - New wave of state management in flutter](https://www.youtube.com/watch?v=AjcpfvoyV-Y&list=PLGJ958IePUyBVpGmJA1hSwB8_j1gU0kWq)
+
 [Riverpod [2] - Real-life example - Simplified Weather App](https://www.youtube.com/watch?v=vGG-fjURbRI&list=PLGJ958IePUyBVpGmJA1hSwB8_j1gU0kWq&index=2)
+
 [Riverpod [3-1] - initState, Authentication, Flavor, Pull To Refresh](https://www.youtube.com/watch?v=glFBu3_ax_Q&list=PLGJ958IePUyBVpGmJA1hSwB8_j1gU0kWq&index=3)
-[Riverpod [3-2] - initState, Authentication, Flavor, Pull To Refresh
-](https://www.youtube.com/watch?v=MMdr80t-2U4&list=PLGJ958IePUyBVpGmJA1hSwB8_j1gU0kWq&index=4)
+
+[Riverpod [3-2] - initState, Authentication, Flavor, Pull To Refresh](https://www.youtube.com/watch?v=MMdr80t-2U4&list=PLGJ958IePUyBVpGmJA1hSwB8_j1gU0kWq&index=4)
+
 [Riverpod [3-3] - initState, Authentication, Flavor, Pull To Refresh](https://www.youtube.com/watch?v=n3pEMZAiGD8&list=PLGJ958IePUyBVpGmJA1hSwB8_j1gU0kWq&index=5)
