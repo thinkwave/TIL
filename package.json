@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "thinkwave",
   "scripts": {
-    "dev": "vuepress dev .",
+    "dev": "vuepress dev . --port 7777",
     "build": "vuepress build ."
   },
   "devDependencies": {
@@ -14,5 +14,5 @@
   "dependencies": {
     "vue-class-component": "^7.2.3"
   },
-  "description": "real time tips"
+  "description": "real tips"
 }
