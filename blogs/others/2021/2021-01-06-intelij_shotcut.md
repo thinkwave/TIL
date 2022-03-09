@@ -11,17 +11,27 @@ tags: [github, intellij]
 ⌘ : command
 ⌥ : option
 
+
+
 ### 이전 소스 이동
 * MAC : `⌘ + ⌥ + 화살표`
+
+
 
 ### 대소문자 변경
 * MAC : `⌘ + shift + u`
 
+
+
 ### 구현체로 이동
 * MAC : `⌘ + ⌥ + b`
 
+
+
 ### 코드 선언부로 이동
 * MAC : `⌘ + B` 
+
+
 
 ## 최근 실행 파일 확인
 * MAC : `⌘ + E` 

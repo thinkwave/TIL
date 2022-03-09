@@ -118,14 +118,14 @@ hystrix.command.<commandKey>.execution.isolation.thread.timeoutInMilliseconds
 - Thread(default)
 
 1. Semaphore Isolation
-   ![Semaphore Isolation](/spring/2020-12-12/hystrix-semaphore-isolation.png)
+   ![Semaphore Isolation](2020-12-12-spring-cloud.assets/hystrix-semaphore-isolation.png)
    - Circuit Breaker 1개당 1개의 Semaphore 생성
    - Semaphore 별로 최대 동시 요청 개수 지정
    - 최대 개수 초과시 Semaphore Rejection 발생 - FAllback 실행
    - Command를 호출한 Caller Thread에서 메소드 실행
    - Timeout이 제 시간에 발생하지 못함
 2. Thread
-   ![Thread Isolation](/spring/2020-12-12/hystrix-Thread-Isolation.png)
+   ![Thread Isolation](2020-12-12-spring-cloud.assets/hystrix-Thread-Isolation.png)
    - Circuit Breaker 별로 사용할 Thread Pool을 지정(ThreadPooKey)
    - Circut break : Thread Pool = N:1 관계 가능
    - 최대 개수 초과시 Thread Pool Rejection 발생 - Fallback 실행
@@ -142,7 +142,7 @@ hystrix.command.<commandKey>.execution.isolation.thread.timeoutInMilliseconds
    - Semaphore Isolation을 기본으로 한다.(Timeout이 없음)
    - Hystrix의 원래 Default는 Thread Isolation
 
-![zuul](/spring/2020-12-12/hystrix-isolation-spring-cloud-zuul.png)
+![zuul](2020-12-12-spring-cloud.assets/hystrix-isolation-spring-cloud-zuul.png)
 
 > Spring Cloud Zuul의 기본 설정으로는 Semaphore Isolation
 > 특정 API 군의 장애(지연)등이 발생하여도 Zuul 자체의 장애로 이어지지 않음
@@ -150,7 +150,7 @@ hystrix.command.<commandKey>.execution.isolation.thread.timeoutInMilliseconds
 3. Spring cloud Zull에서 Hystrix Isolation을 thread로 변경
 - 서버군(Service ID) 별로 Thread Pool을 분리
 
-![zuul-thread](/spring/2020-12-12/spring-cloud-zuul-thread.png)
+![zuul-thread](2020-12-12-spring-cloud.assets/spring-cloud-zuul-thread.png)
 
 ```
 zuul.threadPool.useSeparateThreadPools=true
@@ -161,7 +161,7 @@ zuul.threadPool.threadPoolKeyPrefix=zuulgw
 ## Ribbon
 Netflix가 만든 Software Load Balancer를 내장한 RPC(REST) Library
 
-![ribbon](/spring/2020-12-12/ribbon.png)
+![ribbon](2020-12-12-spring-cloud.assets/ribbon.png)
 
 Client Load Balancer with HTTP Client
 
@@ -190,7 +190,7 @@ Ribbon은 대부분 동작은 Programmable 하며, Spring Cloud에서는 아래�
 ## Eureka
 Netflix가 만든 Dynamic Service Discovery
 
-![eureka](/spring/2020-12-12/eureka.png)
+![eureka](2020-12-12-spring-cloud.assets/eureka.png)
 
 - 등록 : 서버가 자신의 서비스 이름(종류)과 IP주소, 포트를 등록
 - 조회 : 서비스 이름(종류)을 갖고 서버 목록을 조회
@@ -229,7 +229,7 @@ MSA 환경에서 API Gateway의 필요성
 ### Spring Cloud Zuul
 Spring Cloud Zuul은 API Routing은 Hystrix, Ribbon, Eureka를 통해서 구현
 
-![zuul](/spring/2020-12-12/zuul.png)
+![zuul](2020-12-12-spring-cloud.assets/zuul.png)
 
 - Spring Cloud와 가장 잘 Integration 되어 있는 API Gateway
 
@@ -291,7 +291,7 @@ Hystrix 연동하기
 - 모든 MSA Platform 내의 서버는 Eureka Client를 탑재
 - API Server들간의 호출도 Spring Cloud Feign을 통해 Hystrix + Ribbon + Eureka 조합으로 호출
 
-![11st](/spring/2020-12-12/11st-spring-cloud.png)
+![11st](2020-12-12-spring-cloud.assets/11st-spring-cloud.png)
 
 
 ## Spring Cloud Config
@@ -303,7 +303,7 @@ Hystrix 연동하기
   - 서버군의 Config
   - 특정 서버용 Config
 
-![config](/spring/2020-12-12/spring-cloud-config.png)
+![config](2020-12-12-spring-cloud.assets/spring-cloud-config.png)
 
 > Spring Cloud Config에서 가져오는 Config을 가장 우선순위로 가짐(System Config 보다)
 > 우선 순위는 조정 가능.
@@ -324,14 +324,14 @@ MSA 운영 환경을 위한 전용 모니터링 도구들
 - Zuul, Servlet, ResTemplate, Hystrix, Feign, RxJav등을 지원
 - Sleuth는 DB 호출 구간은 표현 안되므로 Spring AOP를 사용하여 Sleuth API로 Trace 정보를 직접 생성
 
-![tracing](/spring/2020-12-12/tracing.png)
+![tracing](2020-12-12-spring-cloud.assets/tracing.png)
 
 ### Spring Cloud Sleuth with Zipkin
 Sleuth로 생성한 trace를 시각화
 
 ### Hystrix 모니터링 with Turbine
 - 실시간으로 모니터링 가능. 장애 발생시 과거 발생 시점은 볼 수 없음
-![hystrix monitoring](/spring/2020-12-12/hystrix-monitoring.png)
+![hystrix monitoring](2020-12-12-spring-cloud.assets/hystrix-monitoring.png)
 
 - 과거 시점은 InfluxDB에 일주일치의 Hystrix Metrics 보관
   * Grafana를 통해 Dashbaord 구성
